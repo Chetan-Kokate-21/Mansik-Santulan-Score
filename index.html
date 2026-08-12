@@ -2,20 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>Mansik — Student Mental Health Signal</title>
+    <title>MindPulse — Understand Your Wellbeing</title>
 
     <meta
         name="description"
-        content="AI-powered student mental health signal based on lifestyle and digital habits."
+        content="MindPulse is an AI-powered student mental wellbeing score based on lifestyle, digital habits, sleep, study and stress patterns."
     >
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -24,1053 +19,472 @@
         rel="stylesheet"
     >
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Background effects -->
-    <div class="ambient ambient-one"></div>
-    <div class="ambient ambient-two"></div>
-    <div class="grid-background"></div>
+    <!-- Background -->
+    <div class="background-orb orb-one"></div>
+    <div class="background-orb orb-two"></div>
 
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
 
-    <!-- =========================
-         NAVBAR
-    ========================== -->
+            <a href="index.html" class="brand">
+                <span class="brand-mark">M</span>
+                <span>MindPulse</span>
+            </a>
 
-    <header class="topbar">
+            <nav class="nav-links">
+                <a href="#how-it-works">How it works</a>
+                <a href="#factors">What we measure</a>
+                <a href="#about">About</a>
+            </nav>
 
-        <a href="#" class="brand">
+            <a href="assessment.html" class="nav-button">
+                Check your score
+                <span>↗</span>
+            </a>
 
-            <span class="brand-mark">
-                M
-            </span>
-
-            <span class="brand-text">
-
-                <strong>Mansik</strong>
-
-                <small>
-                    Student wellness intelligence
-                </small>
-
-            </span>
-
-        </a>
-
-
-        <div class="status-pill">
-
-            <span class="status-dot"></span>
-
-            AI WELLNESS SIGNAL
+            <button class="mobile-menu-button" id="mobileMenuButton">
+                ☰
+            </button>
 
         </div>
 
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#how-it-works">How it works</a>
+            <a href="#factors">What we measure</a>
+            <a href="#about">About</a>
+            <a href="assessment.html">Check your score →</a>
+        </div>
     </header>
 
 
-
+    <!-- HERO -->
     <main>
-
-
-        <!-- =========================
-             HERO
-        ========================== -->
 
         <section class="hero">
 
-            <div class="hero-content reveal">
+            <div class="hero-content">
 
-                <div class="eyebrow">
+                <div class="eyebrow reveal">
+                    <span class="status-dot"></span>
+                    AI-powered wellbeing insight
+                </div>
 
-                    <span></span>
+                <h1 class="hero-title reveal">
+                    Understand your
+                    <span>digital wellbeing.</span>
+                </h1>
 
-                    PERSONAL WELLNESS CHECK
+                <p class="hero-description reveal">
+                    MindPulse analyzes your daily habits, digital behavior,
+                    academic routine, sleep, activity and stress to generate
+                    a personalized mental wellbeing score.
+                </p>
+
+                <div class="hero-actions reveal">
+
+                    <a href="assessment.html" class="primary-button">
+                        Check my score
+                        <span>→</span>
+                    </a>
+
+                    <a href="#how-it-works" class="secondary-button">
+                        Explore MindPulse
+                    </a>
 
                 </div>
 
-
-                <h1>
-
-                    Understand your
-
-                    <br>
-
-                    <em>daily signal.</em>
-
-                </h1>
-
-
-                <p class="hero-description">
-
-                    A simple AI-powered snapshot of how your digital
-                    habits, academic routine, sleep, activity and
-                    stress may be shaping your mental health score.
-
-                </p>
-
-
-                <div class="hero-meta">
-
-                    <span>
-                        01 — Your inputs
-                    </span>
-
-                    <span>
-                        02 — AI prediction
-                    </span>
-
-                    <span>
-                        03 — Personal signal
-                    </span>
-
+                <div class="hero-note reveal">
+                    <span>●</span>
+                    Takes less than 2 minutes
                 </div>
 
             </div>
 
 
+            <!-- Hero visual -->
 
-            <!-- Animated visual -->
+            <div class="hero-visual reveal">
 
-            <div class="orbit-wrapper reveal delay">
+                <div class="score-card">
 
-                <div class="orbit orbit-large"></div>
+                    <div class="score-card-top">
+                        <span>WELLBEING INDEX</span>
+                        <span class="live-pill">
+                            <i></i> AI
+                        </span>
+                    </div>
 
-                <div class="orbit orbit-small"></div>
+                    <div class="score-ring">
 
+                        <div class="ring-glow"></div>
 
-                <div class="orbit-core">
+                        <div class="ring-inner">
+                            <span class="score-number">7.8</span>
+                            <span class="score-out-of">/ 10</span>
+                        </div>
 
-                    <strong>
-                        10
-                    </strong>
+                    </div>
 
-                    <small>
-                        MAX SCORE
-                    </small>
+                    <div class="score-status">
+                        <span class="status-check">✓</span>
+                        Positive balance
+                    </div>
+
+                    <div class="score-line"></div>
+
+                    <div class="mini-metrics">
+
+                        <div>
+                            <span>Sleep</span>
+                            <strong>7.5h</strong>
+                        </div>
+
+                        <div>
+                            <span>Activity</span>
+                            <strong>1.2h</strong>
+                        </div>
+
+                        <div>
+                            <span>Stress</span>
+                            <strong>Medium</strong>
+                        </div>
+
+                    </div>
 
                 </div>
 
+                <div class="floating-card floating-one">
+                    <span class="floating-icon">◌</span>
+                    <div>
+                        <strong>Daily habits</strong>
+                        <small>Analyzed</small>
+                    </div>
+                </div>
 
-                <span class="floating-chip chip-one">
-                    Sleep
-                </span>
-
-                <span class="floating-chip chip-two">
-                    Stress
-                </span>
-
-                <span class="floating-chip chip-three">
-                    Screen time
-                </span>
+                <div class="floating-card floating-two">
+                    <span class="floating-icon">✦</span>
+                    <div>
+                        <strong>AI insight</strong>
+                        <small>Personalized</small>
+                    </div>
+                </div>
 
             </div>
 
         </section>
 
 
+        <!-- TRUST STRIP -->
 
-        <!-- =========================
-             MAIN WORKSPACE
-        ========================== -->
+        <section class="trust-strip">
 
-        <section class="workspace">
+            <div>
+                <strong>12+</strong>
+                <span>behavioral inputs</span>
+            </div>
 
+            <div>
+                <strong>0–10</strong>
+                <span>wellbeing score</span>
+            </div>
 
-            <!-- =========================
-                 FORM CARD
-            ========================== -->
+            <div>
+                <strong>AI</strong>
+                <span>ML-powered prediction</span>
+            </div>
 
-            <article class="form-card reveal">
+            <div>
+                <strong>~2 min</strong>
+                <span>assessment time</span>
+            </div>
 
-                <div class="card-header">
-
-                    <div>
-
-                        <span class="section-kicker">
-                            PROFILE
-                        </span>
-
-                        <h2>
-                            Tell us about your routine
-                        </h2>
-
-                    </div>
+        </section>
 
 
-                    <span class="step-count">
-                        01 / 03
-                    </span>
+        <!-- HOW IT WORKS -->
 
+        <section class="section" id="how-it-works">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    HOW IT WORKS
                 </div>
 
+                <h2>
+                    From your habits<br>
+                    to a meaningful signal.
+                </h2>
 
-                <div class="progress-bar">
+                <p>
+                    MindPulse turns everyday behavioral information into
+                    an easy-to-understand wellbeing score.
+                </p>
 
-                    <span></span>
+            </div>
 
-                </div>
 
+            <div class="steps-grid">
 
+                <article class="step-card">
 
-                <form
-                    id="predict-form"
-                    novalidate
-                >
+                    <div class="step-number">01</div>
 
-
-                    <!-- PROFILE -->
-
-                    <fieldset class="form-section">
-
-                        <div class="section-title">
-
-                            <span class="section-number">
-                                01
-                            </span>
-
-                            <div>
-
-                                <strong>
-                                    Personal profile
-                                </strong>
-
-                                <small>
-                                    Basic information
-                                </small>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="form-grid three-columns">
-
-
-                            <!-- Age -->
-
-                            <div class="field">
-
-                                <label for="age">
-                                    Age
-                                </label>
-
-                                <input
-                                    type="number"
-                                    id="age"
-                                    name="age"
-                                    min="10"
-                                    max="100"
-                                    step="1"
-                                    placeholder="21"
-                                    required
-                                >
-
-                                <small class="error-message"></small>
-
-                            </div>
-
-
-                            <!-- Gender -->
-
-                            <div class="field">
-
-                                <label for="gender">
-                                    Gender
-                                </label>
-
-                                <select
-                                    id="gender"
-                                    name="gender"
-                                    required
-                                >
-
-                                    <option
-                                        value=""
-                                        disabled
-                                        selected
-                                    >
-                                        Select
-                                    </option>
-
-                                    <option value="Male">
-                                        Male
-                                    </option>
-
-                                    <option value="Female">
-                                        Female
-                                    </option>
-
-                                </select>
-
-                                <small class="error-message"></small>
-
-                            </div>
-
-
-                            <!-- Country -->
-
-                            <div class="field">
-
-                                <label for="country">
-                                    Country
-                                </label>
-
-                                <input
-                                    type="text"
-                                    id="country"
-                                    name="country"
-                                    list="country-list"
-                                    placeholder="India"
-                                    autocomplete="off"
-                                    required
-                                >
-
-
-                                <datalist id="country-list">
-
-                                    <option value="India">
-                                    <option value="USA">
-                                    <option value="Canada">
-                                    <option value="Australia">
-                                    <option value="UK">
-                                    <option value="Germany">
-                                    <option value="Mexico">
-                                    <option value="Turkey">
-                                    <option value="France">
-
-                                </datalist>
-
-
-                                <small class="error-message"></small>
-
-                            </div>
-
-                        </div>
-
-                    </fieldset>
-
-
-
-                    <!-- DIGITAL HABITS -->
-
-                    <fieldset class="form-section">
-
-                        <div class="section-title">
-
-                            <span class="section-number">
-                                02
-                            </span>
-
-                            <div>
-
-                                <strong>
-                                    Academic & digital life
-                                </strong>
-
-                                <small>
-                                    Your everyday technology habits
-                                </small>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="form-grid two-columns">
-
-
-                            <!-- Academic level -->
-
-                            <div class="field">
-
-                                <label for="academic_level">
-                                    Academic level
-                                </label>
-
-                                <select
-                                    id="academic_level"
-                                    name="academic_level"
-                                    required
-                                >
-
-                                    <option
-                                        value=""
-                                        disabled
-                                        selected
-                                    >
-                                        Select level
-                                    </option>
-
-                                    <option value="High School">
-                                        High School
-                                    </option>
-
-                                    <option value="Undergraduate">
-                                        Undergraduate
-                                    </option>
-
-                                    <option value="Graduate">
-                                        Graduate
-                                    </option>
-
-                                </select>
-
-                                <small class="error-message"></small>
-
-                            </div>
-
-
-
-                            <!-- Platform -->
-
-                            <div class="field">
-
-                                <label for="most_used_platform">
-                                    Most-used platform
-                                </label>
-
-                                <select
-                                    id="most_used_platform"
-                                    name="most_used_platform"
-                                    required
-                                >
-
-                                    <option
-                                        value=""
-                                        disabled
-                                        selected
-                                    >
-                                        Select platform
-                                    </option>
-
-                                    <option>Facebook</option>
-                                    <option>Instagram</option>
-                                    <option>Snapchat</option>
-                                    <option>Twitter</option>
-                                    <option>YouTube</option>
-                                    <option>TikTok</option>
-                                    <option>LinkedIn</option>
-                                    <option>LINE</option>
-                                    <option>KakaoTalk</option>
-                                    <option>VKontakte</option>
-                                    <option>WhatsApp</option>
-                                    <option>WeChat</option>
-
-                                </select>
-
-                                <small class="error-message"></small>
-
-                            </div>
-
-
-
-                            <!-- Purpose -->
-
-                            <div class="field">
-
-                                <label for="purpose_of_use">
-                                    Primary purpose
-                                </label>
-
-                                <select
-                                    id="purpose_of_use"
-                                    name="purpose_of_use"
-                                    required
-                                >
-
-                                    <option
-                                        value=""
-                                        disabled
-                                        selected
-                                    >
-                                        Select purpose
-                                    </option>
-
-                                    <option>Networking</option>
-                                    <option>Education</option>
-                                    <option>Entertainment</option>
-                                    <option>News</option>
-
-                                </select>
-
-                                <small class="error-message"></small>
-
-                            </div>
-
-
-
-                            <!-- Screen time -->
-
-                            <div class="field">
-
-                                <label for="avg_daily_usage_hours">
-                                    Average screen time
-                                </label>
-
-                                <div class="unit-input">
-
-                                    <input
-                                        type="number"
-                                        id="avg_daily_usage_hours"
-                                        name="avg_daily_usage_hours"
-                                        min="0"
-                                        max="24"
-                                        step="0.1"
-                                        placeholder="4.5"
-                                        required
-                                    >
-
-                                    <span>
-                                        hrs/day
-                                    </span>
-
-                                </div>
-
-                                <small class="error-message"></small>
-
-                            </div>
-
-
-
-                            <!-- Unlocks -->
-
-                            <div class="field">
-
-                                <label for="daily_unlocks">
-                                    Daily phone unlocks
-                                </label>
-
-                                <input
-                                    type="number"
-                                    id="daily_unlocks"
-                                    name="daily_unlocks"
-                                    min="0"
-                                    step="1"
-                                    placeholder="60"
-                                    required
-                                >
-
-                                <small class="error-message"></small>
-
-                            </div>
-
-                        </div>
-
-                    </fieldset>
-
-
-
-                    <!-- LIFESTYLE -->
-
-                    <fieldset class="form-section">
-
-                        <div class="section-title">
-
-                            <span class="section-number">
-                                03
-                            </span>
-
-                            <div>
-
-                                <strong>
-                                    Lifestyle & stress
-                                </strong>
-
-                                <small>
-                                    Your recovery and workload rhythm
-                                </small>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="form-grid three-columns">
-
-
-                            <!-- Study -->
-
-                            <div class="field">
-
-                                <label for="study_hours">
-                                    Study hours
-                                </label>
-
-                                <div class="unit-input">
-
-                                    <input
-                                        type="number"
-                                        id="study_hours"
-                                        name="study_hours"
-                                        min="0"
-                                        max="24"
-                                        step="0.1"
-                                        placeholder="5"
-                                        required
-                                    >
-
-                                    <span>
-                                        hrs/day
-                                    </span>
-
-                                </div>
-
-                                <small class="error-message"></small>
-
-                            </div>
-
-
-
-                            <!-- Physical activity -->
-
-                            <div class="field">
-
-                                <label for="physical_activity_hours">
-                                    Physical activity
-                                </label>
-
-                                <div class="unit-input">
-
-                                    <input
-                                        type="number"
-                                        id="physical_activity_hours"
-                                        name="physical_activity_hours"
-                                        min="0"
-                                        max="24"
-                                        step="0.1"
-                                        placeholder="1"
-                                        required
-                                    >
-
-                                    <span>
-                                        hrs/day
-                                    </span>
-
-                                </div>
-
-                                <small class="error-message"></small>
-
-                            </div>
-
-
-
-                            <!-- Sleep -->
-
-                            <div class="field">
-
-                                <label for="sleep_hours_per_night">
-                                    Sleep
-                                </label>
-
-                                <div class="unit-input">
-
-                                    <input
-                                        type="number"
-                                        id="sleep_hours_per_night"
-                                        name="sleep_hours_per_night"
-                                        min="0"
-                                        max="24"
-                                        step="0.1"
-                                        placeholder="7.5"
-                                        required
-                                    >
-
-                                    <span>
-                                        hrs/night
-                                    </span>
-
-                                </div>
-
-                                <small class="error-message"></small>
-
-                            </div>
-
-
-
-                            <!-- Stress -->
-
-                            <div class="field full-width">
-
-                                <label>
-                                    Perceived stress level
-                                </label>
-
-
-                                <div
-                                    class="stress-selector"
-                                    id="stress_level_group"
-                                >
-
-                                    <button
-                                        type="button"
-                                        data-value="Low"
-                                    >
-                                        <small>01</small>
-                                        Low
-                                    </button>
-
-                                    <button
-                                        type="button"
-                                        data-value="Medium"
-                                    >
-                                        <small>02</small>
-                                        Medium
-                                    </button>
-
-                                    <button
-                                        type="button"
-                                        data-value="High"
-                                    >
-                                        <small>03</small>
-                                        High
-                                    </button>
-
-                                    <button
-                                        type="button"
-                                        data-value="Very High"
-                                        class="danger"
-                                    >
-                                        <small>04</small>
-                                        Very high
-                                    </button>
-
-                                </div>
-
-
-                                <input
-                                    type="hidden"
-                                    id="stress_level"
-                                    name="stress_level"
-                                >
-
-                                <small class="error-message"></small>
-
-                            </div>
-
-                        </div>
-
-                    </fieldset>
-
-
-
-                    <!-- SUBMIT -->
-
-                    <div class="form-actions">
-
-                        <div>
-
-                            <strong>
-                                Ready to check your signal?
-                            </strong>
-
-                            <small>
-                                Your inputs are used only for this prediction.
-                            </small>
-
-                        </div>
-
-
-                        <button
-                            type="submit"
-                            id="submit-btn"
-                            class="primary-button"
-                        >
-
-                            <span class="button-label">
-                                Generate my score
-                            </span>
-
-                            <span class="spinner"></span>
-
-                            <span class="arrow">
-                                ↗
-                            </span>
-
-                        </button>
-
+                    <div class="step-icon">
+                        ◇
                     </div>
 
-                </form>
-
-            </article>
-
-
-
-            <!-- =========================
-                 RESULT CARD
-            ========================== -->
-
-            <aside
-                class="result-card reveal delay"
-                aria-live="polite"
-            >
-
-                <div class="result-header">
-
-                    <div>
-
-                        <span class="section-kicker light">
-                            YOUR SIGNAL
-                        </span>
-
-                        <h2>
-                            Prediction
-                        </h2>
-
-                    </div>
-
-
-                    <span class="model-status">
-
-                        <span></span>
-
-                        MODEL READY
-
-                    </span>
-
-                </div>
-
-
-
-                <!-- IDLE -->
-
-                <div
-                    id="state-idle"
-                    class="result-state"
-                >
-
-                    <div class="score-orb">
-
-                        <div class="orb-ring"></div>
-
-                        <div class="score-center">
-
-                            <strong>
-                                —
-                            </strong>
-
-                            <small>
-                                / 10
-                            </small>
-
-                        </div>
-
-                    </div>
-
-
-                    <h3>
-                        Waiting for your inputs
-                    </h3>
-
+                    <h3>Share your routine</h3>
 
                     <p>
-                        Complete the short check-in and we'll generate
-                        your predicted mental health score.
+                        Tell us about your digital habits, academic
+                        routine, sleep, physical activity and stress.
                     </p>
 
+                </article>
 
-                    <div class="info-row">
 
-                        <span>
-                            AI model
-                        </span>
+                <article class="step-card featured-step">
 
-                        <strong>
-                            Random Forest
-                        </strong>
+                    <div class="step-number">02</div>
 
+                    <div class="step-icon">
+                        ◉
                     </div>
 
-
-                    <div class="info-row">
-
-                        <span>
-                            Output
-                        </span>
-
-                        <strong>
-                            0–10 score
-                        </strong>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- LOADING -->
-
-                <div
-                    id="state-loading"
-                    class="result-state"
-                    hidden
-                >
-
-                    <div class="loading-orb">
-
-                        <span></span>
-
-                    </div>
-
-
-                    <h3>
-                        Reading your signal<span>...</span>
-                    </h3>
-
+                    <h3>AI analyzes patterns</h3>
 
                     <p>
-                        Processing your daily rhythm through
-                        the prediction model.
+                        Your information is processed through a trained
+                        machine-learning pipeline to identify behavioral patterns.
                     </p>
 
-                </div>
+                </article>
 
 
+                <article class="step-card">
 
-                <!-- RESULT -->
+                    <div class="step-number">03</div>
 
-                <div
-                    id="state-result"
-                    class="result-state"
-                    hidden
-                >
-
-                    <div class="score-orb result-orb">
-
-                        <div class="orb-ring"></div>
-
-                        <div class="score-center">
-
-                            <strong id="score-number">
-                                0.00
-                            </strong>
-
-                            <small>
-                                / 10
-                            </small>
-
-                        </div>
-
+                    <div class="step-icon">
+                        ✦
                     </div>
 
+                    <h3>Get your score</h3>
 
-                    <div
-                        class="result-badge"
-                        id="score-band"
-                    >
-                        SIGNAL
-                    </div>
+                    <p>
+                        Receive a simple score from 0 to 10 designed
+                        to help you understand your current wellbeing pattern.
+                    </p>
 
+                </article>
 
-                    <h3 id="result-title">
-                        Your signal is ready
-                    </h3>
+            </div>
 
-
-                    <p id="score-context"></p>
+        </section>
 
 
-                    <div class="score-scale">
+        <!-- FACTORS -->
 
-                        <span>
-                            0
-                        </span>
+        <section class="section factors-section" id="factors">
 
-                        <div>
+            <div class="section-heading centered">
 
-                            <i id="scale-fill"></i>
-
-                        </div>
-
-                        <span>
-                            10
-                        </span>
-
-                    </div>
-
-
-                    <button
-                        type="button"
-                        id="reset-btn"
-                        class="secondary-button"
-                    >
-                        ↻ Run another check
-                    </button>
-
+                <div class="section-label">
+                    WHAT WE MEASURE
                 </div>
 
+                <h2>
+                    Your wellbeing is<br>
+                    influenced by many signals.
+                </h2>
+
+                <p>
+                    MindPulse considers multiple aspects of your everyday routine
+                    rather than relying on a single factor.
+                </p>
+
+            </div>
 
 
-                <!-- ERROR -->
+            <div class="factors-grid">
 
-                <div
-                    id="state-error"
-                    class="result-state"
-                    hidden
-                >
-
-                    <div class="error-orb">
-                        !
-                    </div>
-
-
-                    <h3 id="error-label">
-                        Prediction failed
-                    </h3>
-
-
-                    <p id="error-copy"></p>
-
-
-                    <button
-                        type="button"
-                        id="error-retry-btn"
-                        class="secondary-button"
-                    >
-                        Try again
-                    </button>
-
+                <div class="factor-card">
+                    <span class="factor-number">01</span>
+                    <div class="factor-symbol">◷</div>
+                    <h3>Digital habits</h3>
+                    <p>
+                        Screen usage, device unlocks and your most-used platform.
+                    </p>
                 </div>
 
-
-
-                <div class="result-footnote">
-
-                    ⓘ
-
-                    This is an informational prediction,
-                    not a clinical diagnosis.
-
+                <div class="factor-card">
+                    <span class="factor-number">02</span>
+                    <div class="factor-symbol">⌁</div>
+                    <h3>Sleep</h3>
+                    <p>
+                        Your average sleep duration and daily recovery routine.
+                    </p>
                 </div>
 
-            </aside>
+                <div class="factor-card">
+                    <span class="factor-number">03</span>
+                    <div class="factor-symbol">↗</div>
+                    <h3>Academic routine</h3>
+                    <p>
+                        Study hours and your current academic level.
+                    </p>
+                </div>
+
+                <div class="factor-card">
+                    <span class="factor-number">04</span>
+                    <div class="factor-symbol">○</div>
+                    <h3>Physical activity</h3>
+                    <p>
+                        The amount of time you spend physically active each day.
+                    </p>
+                </div>
+
+                <div class="factor-card">
+                    <span class="factor-number">05</span>
+                    <div class="factor-symbol">≈</div>
+                    <h3>Stress</h3>
+                    <p>
+                        Your self-reported stress level from low to very high.
+                    </p>
+                </div>
+
+                <div class="factor-card">
+                    <span class="factor-number">06</span>
+                    <div class="factor-symbol">+</div>
+                    <h3>Personal context</h3>
+                    <p>
+                        Age, gender, country and academic background.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section class="about-section" id="about">
+
+            <div class="about-card">
+
+                <div class="about-label">
+                    ABOUT MINDPULSE
+                </div>
+
+                <h2>
+                    Technology that helps
+                    you understand yourself.
+                </h2>
+
+                <p>
+                    MindPulse is an AI and machine-learning project created
+                    to explore how everyday behavioral and lifestyle data
+                    can be transformed into an understandable wellbeing signal.
+                </p>
+
+                <p>
+                    It is designed for educational and informational purposes,
+                    not as a medical diagnostic system.
+                </p>
+
+                <a href="assessment.html" class="primary-button">
+                    Take the assessment
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+
+        <section class="final-cta">
+
+            <div class="cta-glow"></div>
+
+            <div class="section-label">
+                YOUR NEXT STEP
+            </div>
+
+            <h2>
+                Start with<br>
+                <span>understanding.</span>
+            </h2>
+
+            <p>
+                Take the short assessment and discover your
+                current wellbeing score.
+            </p>
+
+            <a href="assessment.html" class="primary-button large-button">
+                Check my score
+                <span>→</span>
+            </a>
 
         </section>
 
     </main>
 
 
-
     <!-- FOOTER -->
 
-    <footer>
+    <footer class="footer">
 
-        <span>
-            MANSIK / STUDENT WELLNESS INTELLIGENCE
-        </span>
+        <div class="footer-inner">
 
-        <span>
-            Built for informational purposes only
-        </span>
+            <div class="footer-brand">
+                <a href="index.html" class="brand">
+                    <span class="brand-mark">M</span>
+                    <span>MindPulse</span>
+                </a>
+
+                <p>
+                    AI-powered student wellbeing insights.
+                </p>
+            </div>
+
+            <div class="footer-links">
+
+                <div>
+                    <span>Explore</span>
+                    <a href="#how-it-works">How it works</a>
+                    <a href="#factors">What we measure</a>
+                    <a href="#about">About</a>
+                </div>
+
+                <div>
+                    <span>Product</span>
+                    <a href="assessment.html">Assessment</a>
+                    <a href="https://mansik-santulan-score-1-41u3.onrender.com/docs" target="_blank">
+                        API Docs
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 MindPulse. Built as an AI/ML project.</span>
+            <span>Not a medical diagnosis.</span>
+        </div>
 
     </footer>
 
-
-    <!-- JavaScript -->
 
     <script src="script.js"></script>
 

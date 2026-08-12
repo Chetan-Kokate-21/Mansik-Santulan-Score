@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MindPulse — Your Assessment</title>
+
+    <meta
+        name="description"
+        content="Complete the MindPulse wellbeing assessment."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="assessment-page">
+
+    <div class="background-orb orb-one"></div>
+    <div class="background-orb orb-two"></div>
+
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="index.html" class="brand">
+                <span class="brand-mark">M</span>
+                <span>MindPulse</span>
+            </a>
+
+            <a href="index.html" class="back-home">
+                ← Back to home
+            </a>
+
+        </div>
+    </header>
+
+
+    <main class="assessment-wrapper">
+
+        <!-- HEADER -->
+
+        <section class="assessment-header">
+
+            <div class="eyebrow">
+                <span class="status-dot"></span>
+                Private assessment
+            </div>
+
+            <h1>
+                Let's understand<br>
+                <span>your routine.</span>
+            </h1>
+
+            <p>
+                Answer a few questions about your everyday habits.
+                Your responses are used to generate your MindPulse score.
+            </p>
+
+        </section>
+
+
+        <!-- PROGRESS -->
+
+        <div class="progress-wrapper">
+
+            <div class="progress-info">
+
+                <span id="stepLabel">
+                    Step 1 of 4
+                </span>
+
+                <span id="progressPercent">
+                    25%
+                </span>
+
+            </div>
+
+            <div class="progress-track">
+                <div
+                    class="progress-fill"
+                    id="progressFill"
+                ></div>
+            </div>
+
+        </div>
+
+
+        <!-- FORM -->
+
+        <section class="assessment-card">
+
+            <form id="assessmentForm">
+
+
+                <!-- STEP 1 -->
+
+                <div
+                    class="form-step active"
+                    data-step="1"
+                >
+
+                    <div class="form-step-heading">
+
+                        <span class="form-step-number">
+                            01
+                        </span>
+
+                        <div>
+                            <h2>About you</h2>
+                            <p>
+                                Start with some basic information.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+
+                        <!-- AGE -->
+
+                        <div class="input-group">
+
+                            <label for="age">
+                                Age
+                            </label>
+
+                            <div class="input-with-unit">
+
+                                <input
+                                    type="number"
+                                    id="age"
+                                    min="10"
+                                    max="100"
+                                    placeholder="21"
+                                    required
+                                >
+
+                                <span>years</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- GENDER -->
+
+                        <div class="input-group">
+
+                            <label for="gender">
+                                Gender
+                            </label>
+
+                            <select id="gender" required>
+
+                                <option value="">
+                                    Select gender
+                                </option>
+
+                                <option value="Male">
+                                    Male
+                                </option>
+
+                                <option value="Female">
+                                    Female
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- COUNTRY -->
+
+                        <div class="input-group full-width">
+
+                            <label for="country">
+                                Country
+                            </label>
+
+                            <input
+                                type="text"
+                                id="country"
+                                placeholder="e.g. India"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- ACADEMIC LEVEL -->
+
+                        <div class="input-group full-width">
+
+                            <label>
+                                Academic level
+                            </label>
+
+                            <div class="option-grid">
+
+                                <button
+                                    type="button"
+                                    class="choice-button"
+                                    data-field="academic_level"
+                                    data-value="High School"
+                                >
+                                    <span>01</span>
+                                    High School
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="choice-button"
+                                    data-field="academic_level"
+                                    data-value="Undergraduate"
+                                >
+                                    <span>02</span>
+                                    Undergraduate
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="choice-button"
+                                    data-field="academic_level"
+                                    data-value="Graduate"
+                                >
+                                    <span>03</span>
+                                    Graduate
+                                </button>
+
+                            </div>
+
+                            <input
+                                type="hidden"
+                                id="academic_level"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 2 -->
+
+                <div
+                    class="form-step"
+                    data-step="2"
+                >
+
+                    <div class="form-step-heading">
+
+                        <span class="form-step-number">
+                            02
+                        </span>
+
+                        <div>
+                            <h2>Your digital habits</h2>
+                            <p>
+                                Tell us about your everyday digital behavior.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+
+                        <!-- PLATFORM -->
+
+                        <div class="input-group full-width">
+
+                            <label>
+                                Most-used platform
+                            </label>
+
+                            <div class="platform-grid">
+
+                                <button type="button" class="platform-button" data-field="most_used_platform" data-value="Instagram">
+                                    Instagram
+                                </button>
+
+                                <button type="button" class="platform-button" data-field="most_used_platform" data-value="YouTube">
+                                    YouTube
+                                </button>
+
+                                <button type="button" class="platform-button" data-field="most_used_platform" data-value="WhatsApp">
+                                    WhatsApp
+                                </button>
+
+                                <button type="button" class="platform-button" data-field="most_used_platform" data-value="Facebook">
+                                    Facebook
+                                </button>
+
+                                <button type="button" class="platform-button" data-field="most_used_platform" data-value="LinkedIn">
+                                    LinkedIn
+                                </button>
+
+                                <button type="button" class="platform-button" data-field="most_used_platform" data-value="TikTok">
+                                    TikTok
+                                </button>
+
+                                <button type="button" class="platform-button" data-field="most_used_platform" data-value="Twitter">
+                                    Twitter
+                                </button>
+
+                                <button type="button" class="platform-button" data-field="most_used_platform" data-value="Other">
+                                    Other
+                                </button>
+
+                            </div>
+
+                            <input
+                                type="hidden"
+                                id="most_used_platform"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- PURPOSE -->
+
+                        <div class="input-group full-width">
+
+                            <label>
+                                Primary purpose of use
+                            </label>
+
+                            <div class="option-grid">
+
+                                <button type="button" class="choice-button" data-field="purpose_of_use" data-value="Education">
+                                    <span>01</span>
+                                    Education
+                                </button>
+
+                                <button type="button" class="choice-button" data-field="purpose_of_use" data-value="Networking">
+                                    <span>02</span>
+                                    Networking
+                                </button>
+
+                                <button type="button" class="choice-button" data-field="purpose_of_use" data-value="Entertainment">
+                                    <span>03</span>
+                                    Entertainment
+                                </button>
+
+                                <button type="button" class="choice-button" data-field="purpose_of_use" data-value="News">
+                                    <span>04</span>
+                                    News
+                                </button>
+
+                            </div>
+
+                            <input
+                                type="hidden"
+                                id="purpose_of_use"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- SCREEN TIME -->
+
+                        <div class="input-group">
+
+                            <div class="range-label">
+
+                                <label for="avg_daily_usage_hours">
+                                    Daily usage
+                                </label>
+
+                                <strong>
+                                    <span id="screenTimeValue">4.5</span> hrs
+                                </strong>
+
+                            </div>
+
+                            <input
+                                type="range"
+                                id="avg_daily_usage_hours"
+                                min="0"
+                                max="24"
+                                step="0.5"
+                                value="4.5"
+                            >
+
+                        </div>
+
+
+                        <!-- UNLOCKS -->
+
+                        <div class="input-group">
+
+                            <label for="daily_unlocks">
+                                Daily device unlocks
+                            </label>
+
+                            <input
+                                type="number"
+                                id="daily_unlocks"
+                                min="0"
+                                placeholder="60"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 3 -->
+
+                <div
+                    class="form-step"
+                    data-step="3"
+                >
+
+                    <div class="form-step-heading">
+
+                        <span class="form-step-number">
+                            03
+                        </span>
+
+                        <div>
+                            <h2>Your daily routine</h2>
+                            <p>
+                                Help us understand your everyday balance.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="routine-sliders">
+
+
+                        <div class="large-slider">
+
+                            <div class="range-label">
+
+                                <div>
+                                    <span class="range-icon">◷</span>
+                                    <label for="study_hours">
+                                        Study hours
+                                    </label>
+                                </div>
+
+                                <strong>
+                                    <span id="studyValue">5</span> hrs
+                                </strong>
+
+                            </div>
+
+                            <input
+                                type="range"
+                                id="study_hours"
+                                min="0"
+                                max="24"
+                                step="0.5"
+                                value="5"
+                            >
+
+                            <div class="range-hints">
+                                <span>0 hrs</span>
+                                <span>24 hrs</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="large-slider">
+
+                            <div class="range-label">
+
+                                <div>
+                                    <span class="range-icon">↗</span>
+                                    <label for="physical_activity_hours">
+                                        Physical activity
+                                    </label>
+                                </div>
+
+                                <strong>
+                                    <span id="activityValue">1</span> hrs
+                                </strong>
+
+                            </div>
+
+                            <input
+                                type="range"
+                                id="physical_activity_hours"
+                                min="0"
+                                max="24"
+                                step="0.5"
+                                value="1"
+                            >
+
+                            <div class="range-hints">
+                                <span>0 hrs</span>
+                                <span>24 hrs</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="large-slider">
+
+                            <div class="range-label">
+
+                                <div>
+                                    <span class="range-icon">☾</span>
+                                    <label for="sleep_hours_per_night">
+                                        Sleep per night
+                                    </label>
+                                </div>
+
+                                <strong>
+                                    <span id="sleepValue">7.5</span> hrs
+                                </strong>
+
+                            </div>
+
+                            <input
+                                type="range"
+                                id="sleep_hours_per_night"
+                                min="0"
+                                max="24"
+                                step="0.5"
+                                value="7.5"
+                            >
+
+                            <div class="range-hints">
+                                <span>0 hrs</span>
+                                <span>24 hrs</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 4 -->
+
+                <div
+                    class="form-step"
+                    data-step="4"
+                >
+
+                    <div class="form-step-heading">
+
+                        <span class="form-step-number">
+                            04
+                        </span>
+
+                        <div>
+                            <h2>How are you feeling?</h2>
+                            <p>
+                                Choose the option that best describes your current stress level.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stress-options">
+
+                        <button
+                            type="button"
+                            class="stress-card"
+                            data-value="Low"
+                        >
+                            <span class="stress-indicator low"></span>
+
+                            <div>
+                                <strong>Low</strong>
+                                <small>Feeling calm and manageable</small>
+                            </div>
+
+                            <span class="stress-arrow">→</span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="stress-card"
+                            data-value="Medium"
+                        >
+                            <span class="stress-indicator medium"></span>
+
+                            <div>
+                                <strong>Medium</strong>
+                                <small>Some pressure, generally manageable</small>
+                            </div>
+
+                            <span class="stress-arrow">→</span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="stress-card"
+                            data-value="High"
+                        >
+                            <span class="stress-indicator high"></span>
+
+                            <div>
+                                <strong>High</strong>
+                                <small>Feeling noticeably pressured</small>
+                            </div>
+
+                            <span class="stress-arrow">→</span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="stress-card"
+                            data-value="Very High"
+                        >
+                            <span class="stress-indicator very-high"></span>
+
+                            <div>
+                                <strong>Very High</strong>
+                                <small>Feeling significantly overwhelmed</small>
+                            </div>
+
+                            <span class="stress-arrow">→</span>
+                        </button>
+
+                    </div>
+
+                    <input
+                        type="hidden"
+                        id="stress_level"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- NAVIGATION -->
+
+                <div class="form-navigation">
+
+                    <button
+                        type="button"
+                        class="form-back"
+                        id="backButton"
+                    >
+                        ← Back
+                    </button>
+
+                    <div class="navigation-right">
+
+                        <span
+                            class="validation-message"
+                            id="validationMessage"
+                        ></span>
+
+                        <button
+                            type="button"
+                            class="primary-button"
+                            id="nextButton"
+                        >
+                            Continue
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+
+            <!-- LOADING -->
+
+            <div
+                class="result-loading"
+                id="resultLoading"
+            >
+
+                <div class="loading-orbit">
+
+                    <div></div>
+                    <span>M</span>
+
+                </div>
+
+                <h2>Analyzing your patterns...</h2>
+
+                <p>
+                    Your information is being processed by the MindPulse
+                    machine-learning model.
+                </p>
+
+            </div>
+
+
+            <!-- RESULT -->
+
+            <div
+                class="result-view"
+                id="resultView"
+            >
+
+                <div class="result-top-label">
+                    YOUR MindPulse SCORE
+                </div>
+
+                <div class="result-score-wrapper">
+
+                    <div class="result-ring">
+
+                        <svg
+                            viewBox="0 0 220 220"
+                            class="score-svg"
+                        >
+
+                            <circle
+                                class="score-track"
+                                cx="110"
+                                cy="110"
+                                r="92"
+                            ></circle>
+
+                            <circle
+                                class="score-progress"
+                                id="scoreProgress"
+                                cx="110"
+                                cy="110"
+                                r="92"
+                            ></circle>
+
+                        </svg>
+
+                        <div class="result-score-center">
+
+                            <span
+                                class="result-number"
+                                id="resultNumber"
+                            >
+                                0.00
+                            </span>
+
+                            <span>/ 10</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="result-status"
+                    id="resultStatus"
+                >
+                    Positive balance
+                </div>
+
+                <p
+                    class="result-description"
+                    id="resultDescription"
+                >
+                    Your current behavioral pattern indicates
+                    a relatively positive wellbeing signal.
+                </p>
+
+
+                <div class="result-metrics">
+
+                    <div>
+                        <span>Sleep</span>
+                        <strong id="resultSleep">—</strong>
+                    </div>
+
+                    <div>
+                        <span>Screen time</span>
+                        <strong id="resultScreen">—</strong>
+                    </div>
+
+                    <div>
+                        <span>Activity</span>
+                        <strong id="resultActivity">—</strong>
+                    </div>
+
+                    <div>
+                        <span>Stress</span>
+                        <strong id="resultStress">—</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="result-actions">
+
+                    <button
+                        class="primary-button"
+                        id="againButton"
+                    >
+                        Take assessment again
+                        <span>↻</span>
+                    </button>
+
+                    <a
+                        href="index.html"
+                        class="secondary-button"
+                    >
+                        Back to home
+                    </a>
+
+                </div>
+
+
+                <div class="result-disclaimer">
+                    This score is an informational machine-learning
+                    prediction and is not a medical diagnosis.
+                </div>
+
+            </div>
+
+
+            <!-- ERROR -->
+
+            <div
+                class="api-error"
+                id="apiError"
+            >
+
+                <div class="error-icon">
+                    !
+                </div>
+
+                <h2>Something went wrong</h2>
+
+                <p id="errorText">
+                    We couldn't connect to the prediction service.
+                </p>
+
+                <button
+                    class="primary-button"
+                    id="retryButton"
+                >
+                    Try again
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="assessment.js"></script>
+
+</body>
+</html>
